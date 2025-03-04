@@ -18,5 +18,7 @@ int main() {
 
 	cout << "does local max " << (check_local_max(pointer, size) ? "yes" : "no") << endl;
 
+	delete[] pointer;
+
 	return 0;
 }
