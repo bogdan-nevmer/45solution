@@ -12,8 +12,9 @@ string convert(int* array, int size) {
 }
 
 void init(int* array, int a, int b, int size) {
-	for (int i = 0; i < size; i++)
+	for(int i = 0; i < size; i++)
 	{
-		array[i] = rand() % (b - a + 1) + a;
+		*(array + i) = rand() % (b - a + 1) + a;
+		//array[i] = rand() % (b - a + 1) + a;
 	}
 }
